@@ -7,7 +7,7 @@ Base64 Encode is an OSX Service used to encode files to [Data URIs](http://en.wi
 
 Installing
 ------------------
-1. Add the Base64 Encode.service file to **/Library/Services** on your computer.
+1. Run the PKG file included in this repository.
 2. Right click on any file from Finder. Click "Base64 Encode" to encode that file.
 
 If the service doesn't appear right away, try typing this in your command line:
