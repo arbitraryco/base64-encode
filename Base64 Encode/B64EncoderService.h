@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 //#import <MagicKit/MagicKit.h>
 
+
 @interface B64EncoderService : NSObject
 
 + (B64EncoderService *) service;

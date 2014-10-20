@@ -13,9 +13,20 @@
 		A93174FB19F47EDF003E0353 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93174FA19F47EDF003E0353 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A931750B19F48B62003E0353 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		50EC9B484B686A9C0CD5DD20 /* libPods-Base64 Encode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Base64 Encode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F3C36715C50736E5CA1B0F8 /* Pods-Base64 Encode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base64 Encode.release.xcconfig"; path = "Pods/Target Support Files/Pods-Base64 Encode/Pods-Base64 Encode.release.xcconfig"; sourceTree = "<group>"; };
 		A93174D119F479BD003E0353 /* Base64 Encode.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Base64 Encode.service"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93174D519F479BD003E0353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A93174D619F479BD003E0353 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -23,8 +34,6 @@
 		A93174F519F47AF9003E0353 /* B64EncoderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = B64EncoderService.m; path = "Base64 Encode/B64EncoderService.m"; sourceTree = SOURCE_ROOT; };
 		A93174F719F47EAB003E0353 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A93174FA19F47EDF003E0353 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		A93174FC19F4884F003E0353 /* libPods-Base64 Encode-MagicKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Base64 Encode-MagicKit.a"; path = "../../Library/Developer/Xcode/DerivedData/Base64_Encode-cwfjlemczvmbngdsyqamaovpdhiq/Build/Products/Debug/libPods-Base64 Encode-MagicKit.a"; sourceTree = "<group>"; };
-		F50CB1FBCF7981F205A5C7A8 /* Pods-Base64 Encode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base64 Encode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Base64 Encode/Pods-Base64 Encode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,20 +49,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		381C00D7C240AEEC7EC1E2B2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F50CB1FBCF7981F205A5C7A8 /* Pods-Base64 Encode.debug.xcconfig */,
-				7F3C36715C50736E5CA1B0F8 /* Pods-Base64 Encode.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5CFEE6156095BB704C7DB8C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A93174FC19F4884F003E0353 /* libPods-Base64 Encode-MagicKit.a */,
-				50EC9B484B686A9C0CD5DD20 /* libPods-Base64 Encode.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -63,7 +61,6 @@
 			children = (
 				A93174D319F479BD003E0353 /* Base64 Encode */,
 				A93174D219F479BD003E0353 /* Products */,
-				381C00D7C240AEEC7EC1E2B2 /* Pods */,
 				5CFEE6156095BB704C7DB8C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +112,7 @@
 				A93174CD19F479BD003E0353 /* Sources */,
 				A93174CE19F479BD003E0353 /* Frameworks */,
 				A93174CF19F479BD003E0353 /* Resources */,
+				A931750B19F48B62003E0353 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,7 +256,6 @@
 		};
 		A93174EF19F479BD003E0353 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F50CB1FBCF7981F205A5C7A8 /* Pods-Base64 Encode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -276,7 +273,6 @@
 		};
 		A93174F019F479BD003E0353 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7F3C36715C50736E5CA1B0F8 /* Pods-Base64 Encode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;

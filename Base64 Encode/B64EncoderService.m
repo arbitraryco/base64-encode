@@ -9,7 +9,8 @@
 #import "B64EncoderService.h"
 
 @interface B64EncoderService()
-    - (void) beep;
+    - (void)beep;
+    - (NSString *)guessMIMETypeFromFile:(NSString *)file;
 @end
 
 @implementation B64EncoderService
@@ -46,23 +47,44 @@
     }
     
     NSString *filePath = filenames[0];
-    
-//    GEMagicResult *mimeType = [GEMagicKit magicForFileAtPath:filePath];
+    NSString *mimeType = [self guessMIMETypeFromFile:filePath];
     
     NSLog(@"%@", filePath);
-//    NSLog(@"%@", mimeType);
+    NSLog(@"%@", mimeType);
     
-    [self beep];    
+    NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+    NSData *base64FileData = [fileData base64EncodedDataWithOptions:0];
+    NSString *base64FileDataString = [NSString stringWithUTF8String:base64FileData.bytes];
+
+    NSString *webReadyString = [NSString stringWithFormat:@"data:%@;base64,%@", mimeType, base64FileDataString];
+
+    // paste back to the clipboard
+    NSPasteboard *generalPasteboard = [NSPasteboard generalPasteboard];
+    [generalPasteboard declareTypes:@[NSStringPboardType] owner:nil];
+    [generalPasteboard setString:webReadyString forType:NSStringPboardType];
+
+    [self beep];
 }
 
 - (void)beep {
     NSBeep();
-    
-    
+
+//    TO DO: custom sound
+//    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] pathForResource:@"Tock" ofType:@"aiff"]] error:NULL];
+//    [audioPlayer play];
+
     return;
-    
-    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle bundleWithIdentifier:@"com.apple.UIKit"] pathForResource:@"Tock" ofType:@"aiff"]] error:NULL];
-    [audioPlayer play];
+}
+
+- (NSString *)guessMIMETypeFromFile: (NSString *)fileName {
+    // Borrowed from http://stackoverflow.com/questions/2439020/wheres-the-iphone-mime-type-database
+    CFStringRef UTI = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, (__bridge CFStringRef)[fileName pathExtension], NULL);
+    CFStringRef MIMEType = UTTypeCopyPreferredTagWithClass(UTI, kUTTagClassMIMEType);
+    CFRelease(UTI);
+    if (!MIMEType) {
+        return @"application/octet-stream";
+    }
+    return (__bridge NSString *)(MIMEType);
 }
 
 
