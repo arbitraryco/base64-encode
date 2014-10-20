@@ -11,6 +11,8 @@
 		A93174F619F47AF9003E0353 /* B64EncoderService.m in Sources */ = {isa = PBXBuildFile; fileRef = A93174F519F47AF9003E0353 /* B64EncoderService.m */; };
 		A93174F819F47EAB003E0353 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93174F719F47EAB003E0353 /* AVFoundation.framework */; };
 		A93174FB19F47EDF003E0353 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93174FA19F47EDF003E0353 /* Cocoa.framework */; };
+		A947A31619F5941400C3FE98 /* app.icns in Resources */ = {isa = PBXBuildFile; fileRef = A947A31519F5941400C3FE98 /* app.icns */; };
+		A947A31919F5969600C3FE98 /* NSSound+SystemSounds.m in Sources */ = {isa = PBXBuildFile; fileRef = A947A31819F5969600C3FE98 /* NSSound+SystemSounds.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,9 @@
 		A93174F519F47AF9003E0353 /* B64EncoderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = B64EncoderService.m; path = "Base64 Encode/B64EncoderService.m"; sourceTree = SOURCE_ROOT; };
 		A93174F719F47EAB003E0353 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A93174FA19F47EDF003E0353 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A947A31519F5941400C3FE98 /* app.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = app.icns; sourceTree = "<group>"; };
+		A947A31719F5969600C3FE98 /* NSSound+SystemSounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSound+SystemSounds.h"; sourceTree = "<group>"; };
+		A947A31819F5969600C3FE98 /* NSSound+SystemSounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSound+SystemSounds.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,8 @@
 			children = (
 				A93174F419F47AF9003E0353 /* B64EncoderService.h */,
 				A93174F519F47AF9003E0353 /* B64EncoderService.m */,
+				A947A31719F5969600C3FE98 /* NSSound+SystemSounds.h */,
+				A947A31819F5969600C3FE98 /* NSSound+SystemSounds.m */,
 				A93174D419F479BD003E0353 /* Supporting Files */,
 				A93174F919F47EBE003E0353 /* Frameworks */,
 			);
@@ -87,6 +94,7 @@
 		A93174D419F479BD003E0353 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A947A31519F5941400C3FE98 /* app.icns */,
 				A93174D519F479BD003E0353 /* Info.plist */,
 				A93174D619F479BD003E0353 /* main.m */,
 			);
@@ -160,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A947A31619F5941400C3FE98 /* app.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A93174F619F47AF9003E0353 /* B64EncoderService.m in Sources */,
+				A947A31919F5969600C3FE98 /* NSSound+SystemSounds.m in Sources */,
 				A93174D719F479BD003E0353 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

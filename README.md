@@ -20,6 +20,12 @@ Base64 Encode has no external dependancies. Simply open the Base64 Encode.xcodep
 
 Version History
 ------------------
+#### 1.1
+- Added an app icon. Only shows up during errors as far as I'm aware.
+- Errors out if a file is greater than 10MB, or if you've chosen a directory.
+- Created a PKG file for easy install.
+- Play custom sounds on success (or failure).
+
 #### 1.0
 - Initial release.
 - Future features to think about
