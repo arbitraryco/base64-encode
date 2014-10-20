@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A93174D719F479BD003E0353 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A93174D619F479BD003E0353 /* main.m */; };
+		A93174F619F47AF9003E0353 /* B64EncoderService.m in Sources */ = {isa = PBXBuildFile; fileRef = A93174F519F47AF9003E0353 /* B64EncoderService.m */; };
+		A93174F819F47EAB003E0353 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93174F719F47EAB003E0353 /* AVFoundation.framework */; };
+		A93174FB19F47EDF003E0353 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93174FA19F47EDF003E0353 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50EC9B484B686A9C0CD5DD20 /* libPods-Base64 Encode.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Base64 Encode.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F3C36715C50736E5CA1B0F8 /* Pods-Base64 Encode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base64 Encode.release.xcconfig"; path = "Pods/Target Support Files/Pods-Base64 Encode/Pods-Base64 Encode.release.xcconfig"; sourceTree = "<group>"; };
+		A93174D119F479BD003E0353 /* Base64 Encode.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Base64 Encode.service"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93174D519F479BD003E0353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A93174D619F479BD003E0353 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A93174F419F47AF9003E0353 /* B64EncoderService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = B64EncoderService.h; path = "Base64 Encode/B64EncoderService.h"; sourceTree = SOURCE_ROOT; };
+		A93174F519F47AF9003E0353 /* B64EncoderService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = B64EncoderService.m; path = "Base64 Encode/B64EncoderService.m"; sourceTree = SOURCE_ROOT; };
+		A93174F719F47EAB003E0353 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A93174FA19F47EDF003E0353 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A93174FC19F4884F003E0353 /* libPods-Base64 Encode-MagicKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Base64 Encode-MagicKit.a"; path = "../../Library/Developer/Xcode/DerivedData/Base64_Encode-cwfjlemczvmbngdsyqamaovpdhiq/Build/Products/Debug/libPods-Base64 Encode-MagicKit.a"; sourceTree = "<group>"; };
+		F50CB1FBCF7981F205A5C7A8 /* Pods-Base64 Encode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Base64 Encode.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Base64 Encode/Pods-Base64 Encode.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A93174CE19F479BD003E0353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93174FB19F47EDF003E0353 /* Cocoa.framework in Frameworks */,
+				A93174F819F47EAB003E0353 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		381C00D7C240AEEC7EC1E2B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F50CB1FBCF7981F205A5C7A8 /* Pods-Base64 Encode.debug.xcconfig */,
+				7F3C36715C50736E5CA1B0F8 /* Pods-Base64 Encode.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5CFEE6156095BB704C7DB8C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A93174FC19F4884F003E0353 /* libPods-Base64 Encode-MagicKit.a */,
+				50EC9B484B686A9C0CD5DD20 /* libPods-Base64 Encode.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A93174C819F479BD003E0353 = {
+			isa = PBXGroup;
+			children = (
+				A93174D319F479BD003E0353 /* Base64 Encode */,
+				A93174D219F479BD003E0353 /* Products */,
+				381C00D7C240AEEC7EC1E2B2 /* Pods */,
+				5CFEE6156095BB704C7DB8C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A93174D219F479BD003E0353 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A93174D119F479BD003E0353 /* Base64 Encode.service */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A93174D319F479BD003E0353 /* Base64 Encode */ = {
+			isa = PBXGroup;
+			children = (
+				A93174F419F47AF9003E0353 /* B64EncoderService.h */,
+				A93174F519F47AF9003E0353 /* B64EncoderService.m */,
+				A93174D419F479BD003E0353 /* Supporting Files */,
+				A93174F919F47EBE003E0353 /* Frameworks */,
+			);
+			path = "Base64 Encode";
+			sourceTree = "<group>";
+		};
+		A93174D419F479BD003E0353 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A93174D519F479BD003E0353 /* Info.plist */,
+				A93174D619F479BD003E0353 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A93174F919F47EBE003E0353 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A93174FA19F47EDF003E0353 /* Cocoa.framework */,
+				A93174F719F47EAB003E0353 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A93174D019F479BD003E0353 /* Base64 Encode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A93174EE19F479BD003E0353 /* Build configuration list for PBXNativeTarget "Base64 Encode" */;
+			buildPhases = (
+				A93174CD19F479BD003E0353 /* Sources */,
+				A93174CE19F479BD003E0353 /* Frameworks */,
+				A93174CF19F479BD003E0353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Base64 Encode";
+			productName = "Base64 Encode";
+			productReference = A93174D119F479BD003E0353 /* Base64 Encode.service */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A93174C919F479BD003E0353 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Arbitrary;
+				TargetAttributes = {
+					A93174D019F479BD003E0353 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A93174CC19F479BD003E0353 /* Build configuration list for PBXProject "Base64 Encode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A93174C819F479BD003E0353;
+			productRefGroup = A93174D219F479BD003E0353 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A93174D019F479BD003E0353 /* Base64 Encode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A93174CF19F479BD003E0353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A93174CD19F479BD003E0353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93174F619F47AF9003E0353 /* B64EncoderService.m in Sources */,
+				A93174D719F479BD003E0353 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A93174EC19F479BD003E0353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A93174ED19F479BD003E0353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A93174EF19F479BD003E0353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F50CB1FBCF7981F205A5C7A8 /* Pods-Base64 Encode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Base64 Encode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Base64_Encode-cwfjlemczvmbngdsyqamaovpdhiq/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = service;
+			};
+			name = Debug;
+		};
+		A93174F019F479BD003E0353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F3C36715C50736E5CA1B0F8 /* Pods-Base64 Encode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Base64 Encode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Base64_Encode-cwfjlemczvmbngdsyqamaovpdhiq/Build/Products/Debug",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = service;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A93174CC19F479BD003E0353 /* Build configuration list for PBXProject "Base64 Encode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A93174EC19F479BD003E0353 /* Debug */,
+				A93174ED19F479BD003E0353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A93174EE19F479BD003E0353 /* Build configuration list for PBXNativeTarget "Base64 Encode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A93174EF19F479BD003E0353 /* Debug */,
+				A93174F019F479BD003E0353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A93174C919F479BD003E0353 /* Project object */;
+}
