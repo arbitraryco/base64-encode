@@ -10,6 +10,10 @@ Installing
 1. Add the Base64 Encode.service file to **/Library/Services** on your computer.
 2. Right click on any file from Finder. Click "Base64 Encode" to encode that file.
 
+If the service doesn't appear right away, try typing this in your command line:
+
+    /System/Library/CoreServices/pbs -flush
+
 Building from Source
 ------------------
 Base64 Encode has no external dependancies. Simply open the Base64 Encode.xcodeproject and Build. Let us know if there are any issues.
