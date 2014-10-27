@@ -18,6 +18,12 @@ Building from Source
 ------------------
 Base64 Encode has no external dependancies. Simply open the Base64 Encode.xcodeproject and Build. Let us know if there are any issues.
 
+Uninstalling
+------------------
+To uninstall, simply delete **/Library/Services/Base64 Encode.service**. You may have to type in your admin password to confirm.
+
+Base64 Encode isn't storing any data or tie itself to your system in any meaningful way. No harm will come to you deleting it directly.
+
 Version History
 ------------------
 #### 1.1
